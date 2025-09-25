@@ -8,7 +8,7 @@ With extensive market experience across **Mexico**, the **USA**, and **LATAM**, 
 ## 🌐 Live Site
 
 - ✅ **Official (Main)**: https://your-domain.com
-- 🔗 **GitHub Pages (Backup)**: [Default](https://aortiz55.github.io/R-G-Consulting-Services-LLC/)
+- 🔗 **GitHub Pages (Backup)**: [Click to view](https://aortiz55.github.io/R-G-Consulting-Services-LLC/)
 
 [**Open the site →**]([https://your-domain.com](https://aortiz55.github.io/R-G-Consulting-Services-LLC/))
 
