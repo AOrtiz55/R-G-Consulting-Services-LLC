@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Automotive · R&G Consulting Services LLC</title>
+    <!-- Page styles -->
+    <link rel="stylesheet" href="../../css/industry/auto.css" />
+
+    <!-- Fonts (same as the rest of your site) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Automotive · R&G Consulting Services LLC</title>
+  </head>
+  <body>
+    <!-- Header (Industries is active on this page) -->
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <a class="logo" href="../../index.html"
+            >R&amp;G Consulting Services LLC</a
+          >
+        </div>
+        <nav class="nav-links">
+          <a href="../../index.html">Home</a>
+          <a href="../services.html">Services</a>
+          <a href="../industries.html" class="active">Industries</a>
+
+          <a href="../about-me.html">About</a>
+          <button class="skylark-call" data-open-contact>Contact Me</button>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          />
+          <a
+            href="https://www.linkedin.com/in/YOUR_USERNAME"
+            class="btn-linkedin"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="ind-hero theme-light">
+      <img src="../../images/porsche.jpg"" alt="" />
+      <h1>Automotive</h1>
+    </section>
+
+    <!-- Intro block (left big headline, right paragraph) -->
+    <section class="ind-intro">
+      <div class="container intro-grid">
+        <h2 class="big">
+          The automotive industry is undergoing a digital transformation driven
+          by connected vehicles, electric mobility, automation, and smart
+          manufacturing.
+        </h2>
+        <p class="copy">
+          At R&G Consulting Services, we help automotive companies find the IT
+          talent they need to innovate and stay competitive. From software
+          engineers and embedded systems specialists to data analysts and
+          cybersecurity experts, we connect you with professionals who
+          understand the future of mobility.
+        </p>
+      </div>
+      <!-- <div class="tab-section"> -->
+      <!-- <div class="container next-wrap">
+          <a class="next-link" href="banking.html"
+            ><span class="chev"><</span>Banking</a
+          >
+        </div> -->
+      <div class="container next-wrap">
+        <a class="next-link" href="../industry/bank.html"
+          >Banking<span class="chev">›</span></a
+        >
+      </div>
+      <!-- </div> -->
+    </section>
+    <div class="skylark-veil" data-contact-veil aria-hidden="true">
+      <div class="skylark-backdrop" data-close-contact></div>
+
+      <div
+        class="skylark-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="skylark-title"
+      >
+        <button class="skylark-x" data-close-contact aria-label="Close">
+          ×
+        </button>
+
+        <h2 id="skylark-title">Let’s talk</h2>
+        <p class="skylark-sub">Send me a quick note and I’ll reply by email.</p>
+
+        <form id="skylark-form" class="skylark-form" autocomplete="on">
+          <div class="skylark-row">
+            <input
+              class="skylark-input"
+              type="text"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+            <input
+              class="skylark-input"
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+          </div>
+          <input
+            class="skylark-input"
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            required
+          />
+          <textarea
+            class="skylark-input skylark-area"
+            name="message"
+            rows="5"
+            placeholder="Message…"
+            required
+          ></textarea>
+
+          <button class="skylark-send" type="submit">Send Email ↗</button>
+        </form>
+
+        <!-- <p class="skylark-hint">
+          Prefer your client? Email me at
+          <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+        </p> -->
+      </div>
+    </div>
+    <!-- (Optional) Simple footer -->
+    <footer>
+      <div class="container-foot footer-grid">
+        <div>
+          <h2 class="footer-title">
+            R&G Consulting Services LLC
+
+            <!-- <img
+              class="footer-image"
+              src="../images/logo-words.png"
+              alt="Consulting photo"
+            /> -->
+          </h2>
+        </div>
+
+        <div class="footer-col">
+          <div class="section-title">Location</div>
+          <p>117 S Lexington Street Ste 100,</p>
+          <p>Harr, Cass County, MO 64701</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="section-title">Contact</div>
+          <p>
+            <a href="mailto:email@example.com"
+              >Viridiana.galvan@rg-consultingsvcs.com</a
+            >
+          </p>
+          <p>(314) 625-7711</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Global footer (if you’re using the partial loader) -->
+    <div id="global-footer"></div>
+    <script src="../js/footer.js">
+      //pop up modal for contact
+    </script>
+    <script>
+      //pop up modal for contact
+      (function () {
+        const veil = document.querySelector("[data-contact-veil]");
+        const openEl = document.querySelector("[data-open-contact]");
+        const closeEls = document.querySelectorAll("[data-close-contact]");
+        const form = document.getElementById("skylark-form");
+        const TO = "hello@yourdomain.com"; // <-- change to your address
+
+        function openModal() {
+          veil.setAttribute("aria-hidden", "false");
+          // move focus to first field
+          const first = form.querySelector("input,textarea,button");
+          if (first) first.focus();
+        }
+        function closeModal() {
+          veil.setAttribute("aria-hidden", "true");
+          openEl && openEl.focus();
+        }
+
+        openEl && openEl.addEventListener("click", openModal);
+        closeEls.forEach((el) => el.addEventListener("click", closeModal));
+        veil.addEventListener("click", (e) => {
+          if (e.target.matches(".skylark-backdrop")) closeModal();
+        });
+        document.addEventListener("keydown", (e) => {
+          if (
+            veil.getAttribute("aria-hidden") === "false" &&
+            e.key === "Escape"
+          )
+            closeModal();
+        });
+
+        // Build a mailto on submit
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const fd = new FormData(form);
+          const name = fd.get("name")?.trim() || "";
+          const email = fd.get("email")?.trim() || "";
+          const subject = fd.get("subject")?.trim() || "New message";
+          const message = fd.get("message")?.trim() || "";
+
+          const body = `From: ${name} <${email}>\n\n${message}`;
+          const href = `mailto:${encodeURIComponent(
+            TO
+          )}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+            body
+          )}`;
+          window.location.href = href;
+          closeModal();
+        });
+      })();
+    </script>
+  </body>
+</html>
