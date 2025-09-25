@@ -213,8 +213,7 @@ img {
 /* sevices sections */
 .services {
   position: relative;
-  background: url("C:/Users/aorti/myprojects/RG/images/services.jpg")
-    center/cover no-repeat;
+  background: url("./images/.services.jpg") center/cover no-repeat;
   height: 527px; /* adjust height as needed */
   display: flex;
   align-items: center;
