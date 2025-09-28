@@ -237,6 +237,7 @@ img {
 
 .services-btn {
   display: inline-block;
+  width: 30%;
   padding: 6px 28px;
   background-color: #2c4756;
   border: 1.5px solid #3d5c6e;
